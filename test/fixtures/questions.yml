@@ -2,14 +2,42 @@
 
 one:
   order_number: 1
-  question_type: MyString
+  question_type: Choice
   question_text: MyText
   description: MyText
   survey_id: 1
 
 two:
   order_number: 1
-  question_type: MyString
+  question_type: Yes/No
+  question_text: MyText
+  description: MyText
+  survey_id: 1
+
+three:
+  order_number: 1
+  question_type: Short Answer
+  question_text: MyText
+  description: MyText
+  survey_id: 1
+
+four:
+  order_number: 1
+  question_type: Long Answer
+  question_text: MyText
+  description: MyText
+  survey_id: 1
+
+five:
+  order_number: 1
+  question_type: Choice
+  question_text: MyText
+  description: MyText
+  survey_id: 1
+
+six:
+  order_number: 1
+  question_type: Choice
   question_text: MyText
   description: MyText
   survey_id: 1

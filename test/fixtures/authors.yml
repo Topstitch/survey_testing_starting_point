@@ -1,11 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  email: MyString
-  password_digest: MyString
+windsong:
+  name: Windsong
+  email: windsong@goat.com
+  password_digest: goat
 
-two:
-  name: MyString
-  email: MyString
-  password_digest: MyString
+frog:
+  name: Frog
+  email: frog@goat.com
+  password_digest: goat
+
+percy:
+  name: Percy
+  email: percy@goat.com
+  password_digest: goat
+
+<% 5.times do |i| %>
+author_<%= i %>:
+  name: Zoe
+  email: zoe@goat.com
+  password_digest: goat
+<% end %>
