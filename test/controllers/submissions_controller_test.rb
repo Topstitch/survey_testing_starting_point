@@ -10,6 +10,16 @@ class SubmissionsControllerTest < ActionController::TestCase
     get :new, {:survey_id => surveys(:one).id}
     assert_response :success
     assert_select("p.specific_questions",  surveys(:one).questions.length)
-    # there seems to be a blank paragraph, maybe from the empty question...no matter what.  grumble grumble.
   end
+
+  test "should post render SOMETHING" do
+    post :create, {:survey_id => surveys(:one).id}
+    assert_response :success
+    assert_template "show, {:survey_id => surveys(:one).id}"
+  end
+
+  # test "should get redirect SOMETHING" do
+  #   get :
+  #   assert_redirected_to _path
+  # end
 end
