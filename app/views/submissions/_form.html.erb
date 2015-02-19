@@ -16,7 +16,7 @@
 
   <%= f.fields_for :responses do |ff| %>
     <%= ff.hidden_field :question_id %>
-    <p>
+    <p class = "specific_questions">
       <%= ff.object.question.question_text %>
       <%= ff.object.question.description %>
       <% if ff.object.question.question_type == "Yes/No" %>
