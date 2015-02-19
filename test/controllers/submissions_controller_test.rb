@@ -5,4 +5,11 @@ class SubmissionsControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
+
+  test "should display correct number of questions" do
+    get :new, {:survey_id => surveys(:one).id}
+    assert_response :success
+    assert_select("p",  surveys(:one).questions.length + 1)
+    # there seems to be a blank paragraph, maybe from the empty question...no matter what.  grumble grumble.
+  end
 end

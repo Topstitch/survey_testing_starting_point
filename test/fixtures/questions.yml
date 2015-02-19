@@ -5,21 +5,21 @@ one:
   question_type: Choice
   question_text: MyText
   description: MyText
-  survey_id: 1
+  survey: one
 
 two:
   order_number: 1
   question_type: Yes/No
   question_text: MyText
   description: MyText
-  survey_id: 1
+  survey: one
 
 three:
   order_number: 1
   question_type: Short Answer
   question_text: MyText
   description: MyText
-  survey_id: 1
+  survey: one
 
 four:
   order_number: 1
